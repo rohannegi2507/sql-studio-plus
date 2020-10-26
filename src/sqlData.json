@@ -1,0 +1,11 @@
+{
+    "SELECT * FROM EMPLOYEES":{
+    "gridColumns":["name", "empID"],
+    "gridData":[
+      { "name": "Chuck Norris", "empID": 1 },
+      { "name": "Bruce Lee", "empID": 2 },
+      { "name": "Jackie Chan", "empID": 3 },
+      { "name": "Jet Li", "empID": 4 }
+    ]
+}
+}
