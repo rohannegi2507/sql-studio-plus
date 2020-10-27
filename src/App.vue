@@ -199,25 +199,25 @@ export default class App extends Vue {
 }
 
 .editor {
-  flex: 0 0 50%;
+  flex: 0 1 50%;
 }
 
 .editor-btn {
-  flex: 0 0 10%;
+  flex: 0 1 10%;
 }
 
 .output {
-  flex: 0 0 30%;
+  flex: 0 1 30%;
 }
 
 .form {
-  flex: 0 0 10%;
+  flex: 0 1 10%;
   background-color: white;
 }
 
 .application-nav {
   /* 12em is the width of the columns */
-  flex: 0 0 20em;
+  flex: 0 1 20em;
   background: #5c4084;
 }
 

@@ -207,7 +207,7 @@ export default class Sidebar extends Vue {
   flex: 0 1 2%;
 }
 .database {
-  flex: 0 1 96%;
+  flex: 1 1 96%;
   background: #5c4084;
 }
 .connect-error {
