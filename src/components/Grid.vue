@@ -58,9 +58,9 @@ export default class Grid extends Vue {
   get filteredData() {
     const filterKey = this.filterKey && this.filterKey.toLowerCase();
     const order = this.sortOrders[this.sortKey] || 1;
-    let heroes = this.tableData.rows;
+    let rowsData = this.tableData.rows;
     if (filterKey) {
-      heroes = heroes.filter(function(row) {
+      rowsData = rowsData.filter(function(row) {
         return Object.keys(row).some(function(key) {
           return (
             String(row[key])
@@ -79,7 +79,7 @@ export default class Grid extends Vue {
           return (a === b ? 0 : a > b ? 1 : -1) * order;
         });
     }
-    return heroes;
+    return rowsData;
   }
 
   sortBy(key: string) {

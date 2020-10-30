@@ -142,16 +142,11 @@ export default class Sidebar extends Vue {
   tableList: any = [{ table: "Product" }, { table: "Employees" }];
   userId = "";
   serverName = "";
-  showDatabases = false;
   isUserSignIn = false;
   showConnectError = false;
   dismissModal = "modal"; // modal means Dissmiss the modal if connection is successful
+
   showMap: Record<string, boolean> = {
-    Atlan: false,
-    Factset: false,
-    Hexagon: false
-  };
-  expandMap: Record<string, boolean> = {
     Atlan: false,
     Factset: false,
     Hexagon: false
@@ -172,17 +167,15 @@ export default class Sidebar extends Vue {
 
   expandButton(id: string) {
     this.showMap[id] = true;
-    this.expandMap[id] = true;
   }
+
   collapseButton(id: string) {
     this.showMap[id] = false;
-    this.expandMap[id] = false;
   }
 
   verifyDatabaseUser() {
     if (this.userId == "rnegi" && this.serverName === "rnegi") {
       this.isUserSignIn = true;
-      this.dismissModal = "modal";
     } else {
       this.showConnectError = true;
       this.dismissModal = "";
